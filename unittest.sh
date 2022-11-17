@@ -11,10 +11,5 @@ if [[ $expected > $actual ]]; then
     echo "Expected is larger"
 else
     echo "Expected is smaller"
-
-if [ "$expected" == "$actual" ]; then
-    echo "Test passed!"
-else
-    echo "Test failed!"
     exit 1
 fi
