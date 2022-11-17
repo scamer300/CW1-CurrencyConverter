@@ -2,5 +2,4 @@
 
 source CurrencyConverter.java
 
-echo $1
-echo $2
+output = $( java CurrencyConverter 50 dollars )
