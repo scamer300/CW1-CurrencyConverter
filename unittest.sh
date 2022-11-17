@@ -1,7 +1,7 @@
 #!/bin/bash
 
 output=$(java CurrencyConverter 1 dollars)
-expected="1.0 Dollars = 0.74 Pounds \r1.0 Dollars = 0.88 Euros \rThank you for using the converter."
+expected="1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter."
 
 echo $output
 echo $expected
