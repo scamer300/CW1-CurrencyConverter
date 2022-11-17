@@ -6,7 +6,7 @@ expected="1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using
 echo $output
 echo $expected
 
-if [ "output" == "expected" ]; then
+if [ "$output" == "$expected" ]; then
     echo "Test passed!"
 else
     echo "Test failed"
