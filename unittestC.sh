@@ -1,11 +1,11 @@
 #!/bin/bash
 javac CurrencyConverter.java
 
-actual=$(java CurrencyConverter 1 dollars)
-expected="1.0 Dollars = 0.74 Pounds 1.0 Dollars = 0.88 Euros Thank you for using the converter."
+actual=$(java CurrencyConverter 1 dollar)
+expected=$'1.0 Dollars = 0.74 Pounds\n1.0 Dollars = 0.88 Euros\nThank you for using the converter.'
 
 echo $actual
-echo $expected
+echo "$expected"
 
 if [ "$expected" == "$actual" ]; then
     echo "Test passed!"
