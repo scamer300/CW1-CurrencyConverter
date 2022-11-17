@@ -1,3 +1,3 @@
 #!/bin/bash
 
-output = $( java CurrencyConverter 50 dollars )
+output=$(java CurrencyConverter 50 dollars)
