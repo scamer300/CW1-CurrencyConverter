@@ -11,5 +11,4 @@ if [ "$expected" == "$actual" ]; then
     echo "Test passed!"
 else
     echo "Test failed!"
-    exit 1
 fi
