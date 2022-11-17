@@ -1,7 +1,7 @@
 #!/bin/bash
 javac CurrencyConverter.java
 
-actual=$(java CurrencyConverter 1 dollars)
+actual=$(java CurrencyConverter)
 
 echo $actual
 
