@@ -1,4 +1,6 @@
 #!/bin/bash
 
-$ echo $1
-$ echo $2
+source CurrencyConverter.java
+
+echo $1
+echo $2
