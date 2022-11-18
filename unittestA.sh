@@ -3,10 +3,9 @@ javac CurrencyConverter.java
 
 actual=$(java CurrencyConverter 1 dollars)
 
-echo $actual
-
 if [ -z "$actual" ]; then
    echo "No arguments were provided"
+   exit 1
 else
-   echo "Expected output is not empty"
+   echo "Arguments were provided"
 fi
