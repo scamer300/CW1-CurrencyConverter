@@ -18,28 +18,35 @@ public class CurrencyConverter {
             // For amounts Conversion
             try {
                 switch (currency) {
-                    case "dollars", "DOLLARS", "Dollars" -> {
+                    case "dollars":
+                    case "DOLLARS":
+                    case "Dollars":
                         // For Dollar Conversion
                         pound = amount * 0.74;
                         System.err.println(amount + " Dollars = " + f.format(pound) + " Pounds");
                         euro = amount * 0.88;
                         System.err.println(amount + " Dollars = " + f.format(euro) + " Euros");
-                    }
-                    case "pounds", "POUNDS", "Pounds" -> {
+                        break;
+                    case "pounds":
+                    case "POUNDS":
+                    case "Pounds":
                         // For Pound Conversion
                         dollar = amount * 1.36;
                         System.err.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
                         euro = amount * 1.19;
                         System.err.println(amount + " Pound = " + f.format(euro) + " Euros");
-                    }
-                    case "euros", "EUROS", "Euros" -> {
+                        break;
+                    case "euros":
+                    case "EUROS":
+                    case "Euros":
                         // For Euro Conversion
                         dollar = amount * 1.13;
                         System.err.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                         pound = amount * 0.84;
                         System.err.println(amount + " Euros = " + f.format(pound) + " Pounds");
-                    }
-                    default -> System.out.println("No input has been provided");
+                        break;
+                    default:
+                        System.out.println("No input has been provided");
                 }
             } catch (NumberFormatException e) {
                 System.err.println("Input must be provided in the correct format");
