@@ -120,7 +120,9 @@ actual=$(java CurrencyConverter $input3)
 
 #set variable with expected output
 expected=$'1.0 Pounds = 1.36 Dollars\n1.0 Pounds = 1.19 Euros\nThank you for using the converter.'
+
 #print expected variable
+echo "Expected Output:"
 echo $expected
 
 #Comparison of expected variable and actual variable
