@@ -1,7 +1,8 @@
 #!/bin/bash
 javac CurrencyConverter.java
 
-actual=$(java CurrencyConverter 1 dollars)
+input=$'1 dollars'
+actual=$(java CurrencyConverter $input)
 
 if [ -z "$actual" ]; then
    echo "Test failed!"
