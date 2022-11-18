@@ -48,7 +48,7 @@ public class CurrencyConverter {
                         System.out.println("No input has been provided");
                 }
 
-            System.out.println("Thank you for using the converter.");
+            System.out.println("Thank you for using the currency converter.");
         }
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("No input has been provided.");
