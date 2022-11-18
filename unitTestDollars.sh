@@ -19,21 +19,25 @@ currencyText=${inputArray1[1]}
 echo "currencyValue: $currencyValue"
 echo "currencyText: $currencyText"
 
-if ! [[ "$currencyValue" =~ $regexNumSeq ]]; then
+if ! [[ "$currencyValue" =~ $regexNumSeq ]]
+then
     valueValid=false
 else
     valueValid=true
 fi
 
-if [ "currencyText" == "dollars" ]; then
+if [ "currencyText" == "dollars" ]
+then
     textValid=true
 else
     textValid=false
 fi
 
-if [ "$textValid == true ]; then
+if [ "$textValid == true ]
+then
     echo "Currency Type Pass"
-    if [ "$valueValid" == true ]; then
+    if [ "$valueValid" == true ]
+    	then
     	echo "Currency Value PASS"
     	output1=$(java CurrencyConverter $input1)
     	echo "$output1"
