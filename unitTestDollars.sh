@@ -19,7 +19,7 @@ currencyText=${inputArray1[1]}
 echo "currencyValue: $currencyValue"
 echo "currencyText: $currencyText"
 
-if [ "currencyText" == "dollars" ]
+if [ "$currencyText" == "dollars" ]
 then
     textValid=true
 else
