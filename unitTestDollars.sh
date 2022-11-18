@@ -33,7 +33,7 @@ else
     textValid=false
 fi
 
-if [ "$textValid == true ]
+if [ "$textValid" == true ]
 then
     echo "Currency Type Pass"
     if [ "$valueValid" == true ]
