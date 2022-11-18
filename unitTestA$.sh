@@ -4,8 +4,11 @@ javac CurrencyConverter.java
 actual=$(java CurrencyConverter 1 dollars)
 
 if [ -z "$actual" ]; then
-   echo "No arguments were provided"
+   echo "Test failed!"
+   printf "No currency value was provided"
    exit 1
 else
-   echo "Arguments were provided"
+   echo "Test passed!"
 fi
+
+
