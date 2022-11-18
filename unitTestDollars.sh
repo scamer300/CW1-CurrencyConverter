@@ -19,18 +19,18 @@ currencyText=${inputArray1[1]}
 echo "currencyValue: $currencyValue"
 echo "currencyText: $currencyText"
 
-if ! [[ "$currencyValue" =~ $regexNumSeq ]]
-then
-    valueValid=false
-else
-    valueValid=true
-fi
-
 if [ "currencyText" == "dollars" ]
 then
     textValid=true
 else
     textValid=false
+fi
+
+if ! [[ "$currencyValue" =~ $regexNumSeq ]]
+then
+    valueValid=false
+else
+    valueValid=true
 fi
 
 if [ "$textValid" == true ]
@@ -44,9 +44,11 @@ then
     else
     	echo "you have not entered a value"
     	echo "Currency Value FAIL"
+    	exit 1
     fi
 else
     echo "Currency Type FAIL"
+    exit 1
 fi
 
 
