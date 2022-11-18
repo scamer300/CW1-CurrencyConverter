@@ -27,7 +27,7 @@ else
 fi
 
 
-if [ "$currText" == "dollar" ]
+if [ "$currText" == "dollars" ]
    echo "Currency text matches input format"
    var2Valid=true
 else
