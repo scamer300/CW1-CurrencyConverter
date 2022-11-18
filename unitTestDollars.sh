@@ -68,7 +68,7 @@ IFS=" "
 regexNumSeq='^[0-9]+([.][0-9]+)?$'
 
 #input variable
-input2="10 Dollars"
+input2="1 Dollars"
 echo "$input2"
 
 #insert inputs into array
