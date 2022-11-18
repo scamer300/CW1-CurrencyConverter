@@ -16,45 +16,42 @@ public class CurrencyConverter {
             String currency = args[1];
 
             // For amounts Conversion
-            try {
                 switch (currency) {
                     case "dollars":
                     case "DOLLARS":
                     case "Dollars":
                         // For Dollar Conversion
                         pound = amount * 0.74;
-                        System.err.println(amount + " Dollars = " + f.format(pound) + " Pounds");
+                        System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
                         euro = amount * 0.88;
-                        System.err.println(amount + " Dollars = " + f.format(euro) + " Euros");
+                        System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
                         break;
                     case "pounds":
                     case "POUNDS":
                     case "Pounds":
                         // For Pound Conversion
                         dollar = amount * 1.36;
-                        System.err.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
+                        System.out.println(amount + " Pounds = " + f.format(dollar) + " Dollars");
                         euro = amount * 1.19;
-                        System.err.println(amount + " Pound = " + f.format(euro) + " Euros");
+                        System.out.println(amount + " Pound = " + f.format(euro) + " Euros");
                         break;
                     case "euros":
                     case "EUROS":
                     case "Euros":
                         // For Euro Conversion
                         dollar = amount * 1.13;
-                        System.err.println(amount + " Euros = " + f.format(dollar) + " Dollars");
+                        System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
                         pound = amount * 0.84;
-                        System.err.println(amount + " Euros = " + f.format(pound) + " Pounds");
+                        System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
                         break;
                     default:
                         System.out.println("No input has been provided");
                 }
-            } catch (NumberFormatException e) {
-                System.err.println("Input must be provided in the correct format");
-            }
-            System.err.println("Thank you for using the converter.");
+
+            System.out.println("Thank you for using the converter.");
         }
         catch (ArrayIndexOutOfBoundsException e){
-            System.err.println("No input has been provided.");
+            System.out.println("No input has been provided.");
         }
     }
 
