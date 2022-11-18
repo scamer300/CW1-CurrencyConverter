@@ -55,7 +55,7 @@ echo "----- FORMAT TEST -----"
 
 echo "----- CURRENCY TEST -----"
 
-input3=$'1 dollars'
+input3=$"1 dollars"
 actual=$(java CurrencyConverter $input3)
 expected=$'1.0 Dollars = 0.74 Pounds\n1.0 Dollars = 0.88 Euros\nThank you for using the converter.'
 
@@ -64,7 +64,6 @@ echo $expected
 if [ "$expected" == "$actual" ]; then
     echo "Test passed!"
     echo $expected
-    exit 1
 else
     echo "Test failed!"
     echo $actual
